@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import './css/Navbar.css';
-import  logo from './images/logo.png';
+import  logo from './images/m.n.png';
 import {Link} from 'react-router-dom';
 
 class Navbar extends Component {
@@ -17,13 +17,13 @@ class Navbar extends Component {
             </Link>         
         </div>
         
-         <h1><u>T. Urban 'nails' flex</u></h1>
+         <h1>T. Urban studio</h1>
          
          <div className='navlinks'>
                 <ul id="links" className={this.state.clicked ? "#links active" : "#links"}>
                 <li><Link to='/' className= 'active'>Home</Link></li>
                 <li><Link to='/Viewservices'>View services</Link></li>
-                <li><Link to='/Bookservice'> Book service</Link></li>
+                <li><Link to='/Bookservice'> Book Now</Link></li>
                 <div className="account">    
                 <li><Link to='/Signuplogin'>Create account</Link> </li>
                 </div>

@@ -14,21 +14,21 @@ const Viewservices = () => {
   const videoProperties = [
     {
       id:1,
-      title: 'v3',
+      title: 'Just Gel',
       src: v3,
-      credit: 'Video by mk'
+      credit: 'ksh 500 + art'
     },
     {
       id:2,
-      title: 'video1',
+      title: 'Tips Builder',
       src: video1,
-      credit: 'Video by mk'
+      credit: 'ksh 1500 + art'
     },
     {
       id:3,
-      title: 'video4',
+      title: 'Tips',
       src: video4,
-      credit: 'Video by mk'
+      credit: 'ksh 1000 + art'
     }
   ]
  

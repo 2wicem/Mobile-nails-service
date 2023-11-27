@@ -1,13 +1,13 @@
 .nav{
-    background: linear-gradient(45deg, #8460ed, #ff1252);
     align-items: center;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     color: antiquewhite;
     height: 150px;
-    box-shadow: 0 50px 15px rgba(0, 0, 0, 0.06);
     top:0px;
+    border-bottom: hidden;
+    padding-right: 20px;
 } 
 .nav h1{
     margin-right: 100px;
@@ -27,7 +27,6 @@
 }
 .navlinks{
     margin-top: 0px;
-
 }
 .nav .navlinks ul{
     display: flex;
@@ -38,11 +37,11 @@
     position: relative;
 }
 .nav .navlinks ul li a{
+    color: #fff;
     display: block;
     text-decoration: none;
-    color: aliceblue;
     font-size: large;
-    font-weight: 600;
+    font-weight: 700;
     padding: 0.5rem;
     margin: 0 0.5rem;
     border-radius: 0.5rem;
@@ -51,10 +50,10 @@
 
 .nav .navlinks ul li a:hover,
 .nav .navlinks ul li a.active{
-    color: rgb(179, 255, 0);
+    color: blue;
 }
 .nav .navlinks .account{
-    background-color: rgb(117, 63, 168);
+    background-color: rgb(179, 255, 0);
     border-radius: 0.5rem;
 }
 .nav .navlinks ul li a:hover::after,
@@ -67,8 +66,10 @@
     bottom: -4px;
     left: 20px;
 }
+
 #mobile {
-    display: block;
+    display: none;
+    padding: 0px;
 }
 #mobile i {
     color: blueviolet;
@@ -76,6 +77,16 @@
 }
 
 @media  screen and (max-width: 769px) {
+    .nav .navlinks ul li a:hover::after,
+    .nav .navlinks ul li a.active::after{
+    content: "";
+    width: 30px;
+    height: 2px;
+    background: rgb(179, 255, 0);
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+    }
     *{
         max-width: 100vh;
         margin-right: 0px;
@@ -104,7 +115,9 @@
         margin-bottom: 10px;
     }
     #mobile {
-        display: none;
+        position: absolute;
+        display: block;
+        margin-left: 350px;
     }
     #mobile i{
         font-size: 24px;

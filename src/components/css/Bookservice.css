@@ -1,0 +1,40 @@
+.book {
+    display: block;
+    text-align: center;
+}
+.book .inputs{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    margin-left: 5px;
+}
+.book .inputs input{
+    background: linear-gradient(45deg, #ff1252, #8460ed);
+    width: auto;
+    margin: 5px;
+    border-radius: 15px;
+    padding: 5px;
+    border: hidden;
+    color: #fff;
+}
+.sub-menu{
+    display: none;
+}
+.book .inputs .service:hover{
+    display: block;
+}
+.submit{
+    margin-left: 550px;
+
+}
+@media screen  and (max-width: 769px){
+    .book .inputs{
+        display: flex;
+        flex-direction: column;
+    }
+    .book {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}

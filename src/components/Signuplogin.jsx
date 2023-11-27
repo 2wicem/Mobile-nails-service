@@ -7,25 +7,28 @@ const Signuplogin = () => {
 
   return (
         <div className="sign">
-            <div className="container">
+          <div className="container">
                  <div className="header">
                     <div className="text">{action}</div>
                     <div className="underline"></div>
                  </div>
-              <div className="inputs">
-                 {action==="Login"?<div></div>:<div className="input">
+        <div className="inputs">
+                 {action==="Login"?<div></div>:
+            <div className="input">
                   <img src="" alt="User icon" />
                   <input type='text' placeholder='Name'/>
-              </div>}
+            </div>}
             
             <div className="input">
                 <img src="" alt="Email icon" />
                 <input type='email' placeholder='Email Id'/>
             </div>
+
             <div className="input">
                 <img src="" alt="Password icon" />
                 <input type='password' placeholder='Password'/>
             </div>
+            
             {action==="Sign up"?<div></div>:<div className="forgot-password">Lost Password? <span>Click here</span></div>}
             
             <div className="submit-container">
@@ -33,7 +36,7 @@ const Signuplogin = () => {
                 <div className={action==="Sign up"?"submit gray":"submit"} onClick={()=>{setAction("Login")}}>Login</div>
             </div>
         </div>
-    </div>
+          </div>
         </div>
       )
 }

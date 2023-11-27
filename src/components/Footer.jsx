@@ -8,8 +8,7 @@ const Footer = () => {
       <div className="statements">
         <ul>
             <li>Iam fashion oriented and curious about results</li>
-            <li>Strictly offfering a russian style of services.
-            </li>
+            <li>Strictly offfering a russian style of services.</li>
             <li>Best products and equipments in market</li>
             <li>Have a collective experience of over 3 years</li>
         </ul>
