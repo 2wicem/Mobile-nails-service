@@ -12,17 +12,23 @@
     margin: 2rem 2rem;
     padding-top: 2rem;
 }
-.footer .statements ul{.all-footer .copyright{
+.all-footer .copyright{
     align-items: center;
     text-align: center;
 }
+.footer .statements ul{
     font-family:'Courier New', Courier, monospace;
     display: flex;
     flex-direction: column;
     list-style: square;
+    font-weight: 700;
     gap: 1rem;
-    color: aqua;
+    color: rgb(179, 255, 0);
     font-size: 17px;
+}
+.footer .statements ul span{
+    color: blue;
+    font-weight: 700;
 }
 .footer .links ul{
     display: flex;
@@ -35,16 +41,19 @@
 }
 .footer .links ul li a{
     text-decoration: none;
-    color: rgb(179, 255, 0);
+    color: blue;
+    font-weight: 700;
 }
 .footer .queries ul{
     display: flex;
     flex-direction: column;
     list-style: none;
     gap: 1rem;
+    font-weight: 700;
 }
 .footer .queries ul span{
-    color: rgb(179, 255, 0);
+    color: blue;
+    font-weight: 700;
 }
 .all-footer .copyright{
     align-items: center;
@@ -54,7 +63,10 @@
 }
 @media screen and (max-width: 769px){
     .all-footer .footer{
+        display: block;
         flex-direction: column;
+        margin-left: 0rem;
+        margin-right: 2rem;
     }
     .footer .statements ul{
         font-family:'Courier New', Courier, monospace;
@@ -69,7 +81,7 @@
         background: linear-gradient(45deg, #ff1252, #8460ed);
         display: flex;
         flex-direction: column;
-        height: 650px;
+        height: 300px;
     }
     .all-footer .copyright{
         align-items: center;

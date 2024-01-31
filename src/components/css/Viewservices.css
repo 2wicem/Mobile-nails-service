@@ -57,6 +57,7 @@ table tbody tr:hover {
     width: 100%;
 }
 .carousel{
+    max-width: 400px;
     width: 500px;
     height: 100px;
     margin-top: 1rem;
@@ -79,6 +80,10 @@ table tbody tr:hover {
 }
 .carousel:hover .carousel-control-next-icon{
     visibility: visible;
+}
+.CarouselCaption{
+    background-color: #ff1252;
+    max-width: 50px;
 }
 @media  screen and (max-width: 769px) {
     section{

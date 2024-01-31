@@ -7,10 +7,10 @@ const Footer = () => {
 <div className='footer'>
       <div className="statements">
         <ul>
-            <li>Iam fashion oriented and curious about results</li>
-            <li>Strictly offfering a russian style of services.</li>
-            <li>Best products and equipments in market</li>
-            <li>Have a collective experience of over 3 years</li>
+            <li><span>Fashion</span> oriented and <span>curious</span> about results</li>
+            <li>Strictly offfering a <span>russian</span> style of service</li>
+            <li><span>Best products and equipments</span> in market</li>
+            <li>Have a collective experience of <span>over 3 years</span></li>
         </ul>
       </div>
       <div className="links">
@@ -29,7 +29,7 @@ const Footer = () => {
       </div>
      </div>
     <div className="copyright">
-        <h2>It's a flex</h2>
+        <h2><small>&copy; It's a flex</small></h2>
     </div>
 
     </section>

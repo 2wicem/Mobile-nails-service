@@ -2,6 +2,38 @@
     background-size: 100% 100%;
     height: 450px;
 }
-h2{
-
+.landing{
+    max-width: 500px;
+    margin: 15px;
+    align-items: flex-start;
+}
+.landing h1{
+    color: blue;
+    font-weight: bolder;
+    word-spacing: 6px;
+    margin: 15px;
+}
+.landing h1 span{
+    color: rgb(85, 4, 4);
+}
+.landing h2{
+    color: black;
+font-weight: 500;
+margin: 15px;
+margin-top: 20px;
+text-indent: 50px;
+}
+.landing h2 span{
+    color: rgb(85, 4, 4);
+}
+@media screen and (max-width:769px) {
+    *{
+        max-height: 100%;
+    }
+    .landing{
+        margin-left: 0px;
+        max-width: 350px;
+        align-items: center;
+        text-align: center;
+    }
 }

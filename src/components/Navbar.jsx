@@ -16,12 +16,17 @@ class Navbar extends Component {
             <img className='label'  width="10%" src={logo} alt='Russiun Manicure'/>
             </Link>         
         </div>
-        
-         <h1>T. Urban studio</h1>
+        <div className="edit">
+        <h1><span>U</span>rban <span>S</span>tyles <span>S</span>tudio</h1>
+         <h2>
+          
+         </h2>
+        </div>
+         
          
          <div className='navlinks'>
                 <ul id="links" className={this.state.clicked ? "#links active" : "#links"}>
-                <li><Link to='/' className= 'active'>Home</Link></li>
+                <li><Link to='/'>Home</Link></li>
                 <li><Link to='/Viewservices'>View services</Link></li>
                 <li><Link to='/Bookservice'> Book Now</Link></li>
                 <div className="account">    

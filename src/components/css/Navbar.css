@@ -1,4 +1,5 @@
 .nav{
+    background: transparent;
     align-items: center;
     display: flex;
     flex-direction: row;
@@ -14,6 +15,20 @@
     font-weight: 700;
     font-size: xx-large;
     color: rgb(179, 255, 0);
+}
+.edit{
+
+    display: flex;
+    flex-direction: column;
+}
+.edit h2{
+    font-weight: 700;
+    font-size: 20px;
+    color: blue;
+    background: linear-gradient(45deg, #8460ed, #ff1252);
+}
+.nav h1 span{
+    color: red;
 }
 .logo{
     display: flex;
@@ -45,7 +60,7 @@
     padding: 0.5rem;
     margin: 0 0.5rem;
     border-radius: 0.5rem;
-    transition: 0.3s easy-in-out;
+    transition: 0.9s easy-in-out;
 }
 
 .nav .navlinks ul li a:hover,
@@ -54,7 +69,7 @@
 }
 .nav .navlinks .account{
     background-color: rgb(179, 255, 0);
-    border-radius: 0.5rem;
+    border-radius: 1.3rem;
 }
 .nav .navlinks ul li a:hover::after,
 .nav .navlinks ul li a.active::after{
@@ -91,14 +106,14 @@
         max-width: 100vh;
         margin-right: 0px;
     }
-    #links {
+    .navlinks #links {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
         position:absolute;
         top: 100px;
-        right: 0px;
+        right: 40px;
         width: 190px;
         height: 35vh;
         background: #17cf97;
@@ -108,7 +123,7 @@
         border-radius: 1rem;
         transition: 0.3s ease-in-out;
     }
-    #links.active{
+    .navlinks #links.active{
         right: 0px;
     }
     .navlinks ul li{
@@ -135,6 +150,17 @@
         height: 50px;
         border-radius: 15px;
         margin: 1rem;
+    }
+    .edit{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .edit h2{
+        font-weight: 700;
+        font-size: 20px;
+        color: blue;
+        background: linear-gradient(45deg, #8460ed, #ff1252);
     }
 }
 

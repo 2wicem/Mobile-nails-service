@@ -6,8 +6,7 @@ const Signuplogin = () => {
     const [action,setAction] = useState("Login")
 
   return (
-        <div className="sign">
-          <div className="container">
+          <form className="container" action='connect.php' method='POST'>
                  <div className="header">
                     <div className="text">{action}</div>
                     <div className="underline"></div>
@@ -16,17 +15,17 @@ const Signuplogin = () => {
                  {action==="Login"?<div></div>:
             <div className="input">
                   <img src="" alt="User icon" />
-                  <input type='text' placeholder='Name'/>
+                  <input type='text' name='name' id='name' placeholder='Name'/>
             </div>}
             
             <div className="input">
                 <img src="" alt="Email icon" />
-                <input type='email' placeholder='Email Id'/>
+                <input type='email' name='email' id='email' placeholder='Email Id'/>
             </div>
 
             <div className="input">
                 <img src="" alt="Password icon" />
-                <input type='password' placeholder='Password'/>
+                <input type='password' name='password' id='password' placeholder='Password'/>
             </div>
             
             {action==="Sign up"?<div></div>:<div className="forgot-password">Lost Password? <span>Click here</span></div>}
@@ -36,8 +35,7 @@ const Signuplogin = () => {
                 <div className={action==="Sign up"?"submit gray":"submit"} onClick={()=>{setAction("Login")}}>Login</div>
             </div>
         </div>
-          </div>
-        </div>
+          </form>
       )
 }
 

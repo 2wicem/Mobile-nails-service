@@ -1,15 +1,30 @@
+.intro{
+    margin: 50px;
+    padding: 2rem;
+    color:blue;
+    background: linear-gradient(45deg, #7e9e86, rgb(179, 255, 0));
+    border-radius: 15px;
+}
+.intro h2{
+    color: #ff1252;
+}
+.intro h2 span{
+    color: blue;
+}
 .book {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
 }
 .book .inputs{
     display: flex;
     flex-direction: row;
-    margin: 20px;
-    margin-left: 5px;
+    margin: 50px;
+    align-items: center;
 }
 .book .inputs input{
-    background: linear-gradient(45deg, #ff1252, #8460ed);
+    background: linear-gradient(45deg, #12ff4d, rgb(179, 255, 0));
     width: auto;
     margin: 5px;
     border-radius: 15px;
@@ -19,16 +34,38 @@
 }
 .sub-menu{
     display: none;
+
+}
+::placeholder{
+    color: blue;
+}
+.service .dropdown{
+    color: blue;
+    background: linear-gradient(45deg, #12ff4d, rgb(179, 255, 0));
+    max-width: 200px;
+    padding: 0.3rem;
+    border-radius: 15px;
+}
+.service .dropdown option{
+    color: rgb(118, 4, 163);
+    background: linear-gradient(45deg, #12ff4d, rgb(179, 255, 0));
 }
 .book .inputs .service:hover{
     display: block;
 }
-.submit{
-    margin-left: 550px;
-
+.book .submit{
+    background-color: #12ff4d;
+    text-align: center;
+    align-items: center;
+    width: fit-content;
+    padding: 1rem;
 }
 @media screen  and (max-width: 769px){
     .book .inputs{
+        display: flex;
+        flex-direction: column;
+    }
+    .book .inputs .name, .phone, .service, .location, .date, .time{
         display: flex;
         flex-direction: column;
     }
