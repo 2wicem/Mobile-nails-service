@@ -1,33 +1,30 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-    background: linear-gradient(45deg, #8460ed, #ff1252);
-    height: 100vh;
-    width: 100%;
-}
-.App{
-    font-family: sans-serif;
-    text-align: center;
-}
+<form className="container" action='connect.php' method='POST'>
+                 <div className="header">
+                    <div className="text">{action}</div>
+                    <div className="underline"></div>
+                 </div>
+        <div className="inputs">
+                 {action==="Login"?<div></div>:
+            <div className="input">
+                  <img src="" alt="User icon" />
+                  <input type='text' name='name' id='name' placeholder='Name'/>
+            </div>}
+            
+            <div className="input">
+                <img src="" alt="Email icon" />
+                <input type='email' name='email' id='email' placeholder='Email Id'/>
+            </div>
 
-@media screen and (max-width: 769px) {
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        overflow-x: hidden;
-        text-align: center;
-        align-items: center;
-    }
-    body{
-        height: 100vh;
-        width: 100%;
-    }
-    .App{
-        font-family: sans-serif;
-        text-align: center;
-    }
-}
+            <div className="input">
+                <img src="" alt="Password icon" />
+                <input type='password' name='password' id='password' placeholder='Password'/>
+            </div>
+            
+            {action==="Sign up"?<div></div>:<div className="forgot-password">Lost Password? <span>Click here</span></div>}
+            
+            <div className="submit-container">
+                <div className={action==="login"?"submit gray":"submit"} onClick={()=>{setAction("Sign up")}}>Sign up</div>
+                <div className={action==="Sign up"?"submit gray":"submit"} onClick={()=>{setAction("Login")}}>Login</div>
+            </div>
+        </div>
+          </form>
