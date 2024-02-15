@@ -73,7 +73,9 @@
     font-weight: 600;
 }
 .submit-container{
-/*    gap: 60px;*/
+    gap: 60px;
+    position: relative;
+    left: 427px;
     align-items: center;
     text-align: center;
     display: flex;
@@ -81,6 +83,7 @@
     width: 200px;
 }
 .submit{
+    padding: 15px;
     display: flex;
     align-items: center;
     text-align: center;
