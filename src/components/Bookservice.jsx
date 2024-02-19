@@ -13,20 +13,20 @@ const [selects, setSelects] = useState ();
       <h1>Looking out for Manicure and pedicure services?</h1>
       <h2><u>Make an appointment</u> with one of <span>The perfect nails doc. </span> within the country</h2>
     </div>
-        <form className='book' action='connect1.php' method='POST'>
+        <form className='book' action='booking.php' method='POST'>
       <div className="inputs">
         <div className="name">
         <label>Name</label>
-          <input type='text' placeholder="what's your first name?" required/>
+          <input type='text' placeholder="what's your first name?" name='name' required/>
         </div>
         <div className="phone">
         <label>phone</label>
           <input type='integer'  placeholder="what's your
-           phone no.?" required/>
+           phone no.?" name='phone' required/>
         </div>
         <div className="service">
           <label>select service</label>
-          <select className="dropdown" placeholder="select service" value={selects} onChange={e=>setSelects(e.target.value)} required>
+          <select className="dropdown" placeholder="select service" name='service' value={selects} onChange={e=>setSelects(e.target.value)} required>
             <option></option>
             <option> <li>Gel</li> <li>500</li></option>
             <option> <li>Tips and Gel</li> <li>1000</li></option>
@@ -38,19 +38,19 @@ const [selects, setSelects] = useState ();
         </div>
         <div className="location">
         <label>location</label>
-          <input type='text' placeholder="what's your location?"required/>
+          <input type='text' placeholder="what's your location?" name='location' required/>
         </div>
         <div className="date">
         <label>date</label>
-          <input type='text' placeholder="which date?"required/>
+          <input type='text' placeholder="which date?" name='date' required/>
         </div>
         <div className="time">
         <label>time</label>
-          <input type='text' placeholder="at what time?" required/>
+          <input type='text' placeholder="at what time?" name='time' required/>
         </div>
       </div>
       <div className="submit">
-        Book
+        <input type='submit'/>
       </div>
     </form>
     </>
