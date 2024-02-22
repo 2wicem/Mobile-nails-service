@@ -49,9 +49,6 @@ const [selects, setSelects] = useState ();
           <input type='text' placeholder="at what time?" name='time' required/>
         </div>
       </div>
-      <div className="submit">
-        <input type='submit'/>
-      </div>
     </form>
     </>
       )
