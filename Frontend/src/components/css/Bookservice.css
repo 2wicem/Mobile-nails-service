@@ -2,14 +2,14 @@
     margin: 50px;
     padding: 2rem;
     color:blue;
-    background: linear-gradient(45deg, #7e9e86, rgb(179, 255, 0));
+    background: linear-gradient(45deg, #7e9e86, #1DA1F2);
     border-radius: 15px;
 }
 .intro h2{
     color: #ff1252;
 }
 .intro h2 span{
-    color: blue;
+    color: #fff;
 }
 .book {
     display: flex;
@@ -24,7 +24,7 @@
     align-items: center;
 }
 .book .inputs input{
-    background: linear-gradient(45deg, #12ff4d, rgb(179, 255, 0));
+    background: #1DA1F2;
     width: auto;
     margin: 5px;
     border-radius: 15px;
@@ -41,7 +41,7 @@
 }
 .service .dropdown{
     color: blue;
-    background: linear-gradient(45deg, #12ff4d, rgb(179, 255, 0));
+    background: #1DA1F2;
     max-width: 200px;
     padding: 0.3rem;
     border-radius: 15px;

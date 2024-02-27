@@ -23,7 +23,7 @@
     list-style: square;
     font-weight: 700;
     gap: 1rem;
-    color: rgb(179, 255, 0);
+    color: black;
     font-size: 17px;
 }
 .footer .statements ul span{
@@ -74,7 +74,7 @@
         flex-direction: column;
         list-style: square;
         gap: 1rem;
-        color: aqua;
+        color: #1DA1F2;
         font-size: 17px;
     }
     .all-footer{

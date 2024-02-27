@@ -14,7 +14,7 @@
     margin-right: 100px;
     font-weight: 700;
     font-size: xx-large;
-    color: rgb(179, 255, 0);
+    color: blue;
 }
 .edit{
 
@@ -24,7 +24,7 @@
 .edit h2{
     font-weight: 700;
     font-size: 20px;
-    color: blue;
+    color: #1DA1F2;
     background: linear-gradient(45deg, #8460ed, #ff1252);
 }
 .nav h1 span{
@@ -68,7 +68,7 @@
     color: blue;
 }
 .nav .navlinks .account{
-    background-color: rgb(179, 255, 0);
+    background-color:  #1DA1F2;
     border-radius: 1.3rem;
 }
 .nav .navlinks ul li a:hover::after,

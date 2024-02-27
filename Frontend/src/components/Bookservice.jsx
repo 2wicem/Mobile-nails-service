@@ -10,9 +10,10 @@ const [selects, setSelects] = useState ();
   return (
     <>
     <div className="intro">
-      <h1>Looking out for Manicure and pedicure services?</h1>
-      <h2><u>Make an appointment</u> with one of <span>The perfect nails doc. </span> within the country</h2>
+      <h1>Loooking out for an indoor or outdoor manicure or pedicure...?</h1>
+      <h2>Indulge and give in to your passion by making an appointment with one of <span>The perfect nail techs </span> within the country</h2>
     </div>
+    
         <form className='book' action='booking.php' method='POST'>
       <div className="inputs">
         <div className="name">

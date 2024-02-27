@@ -42,31 +42,38 @@ const Viewservices = () => {
             <th className='expand'>Cost in ksh</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody className='twitterblue'>
+
         <tr>
-            <td>Just gel</td>
-            <td>500</td>
-          </tr>
+          <td>Just gel</td>
+          <td>500</td>
+         </tr>
+
           <tr>
             <td>Builder + gel</td>
             <td>1000</td>
           </tr>
+
           <tr>
             <td>Tips + gel</td>
             <td>1000</td>
           </tr>
+
           <tr>
             <td> Tips Builder + gel</td>
             <td>1500</td>
           </tr>
+
           <tr>
             <td>Gum gel</td>
             <td>1500</td>
           </tr>
+
           <tr>
             <td>Aclyrics</td>
             <td>2500</td>
           </tr>
+          
         </tbody>
       </table>
       </div>

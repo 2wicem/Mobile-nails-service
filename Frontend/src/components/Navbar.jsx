@@ -17,7 +17,7 @@ class Navbar extends Component {
             </Link>         
         </div>
         <div className="edit">
-        <h1><span>U</span>rban <span>S</span>tyles <span>S</span>tudio</h1>
+        <h1><span>V</span>oltage <span>P</span>eony <span>S</span>tudio</h1>
          <h2>
           
          </h2>
